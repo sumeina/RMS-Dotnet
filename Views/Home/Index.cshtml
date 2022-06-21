@@ -1,0 +1,129 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 class="text-center">Welcome To RMS</h1>
+<hr />
+    <div class="row">
+    <div class="col-6">
+         <div class="card">
+            <div class="card-body">
+ <style>
+     h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+     
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f2e6e6;
+}
+
+input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: indigo;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  margin: 4px 2px;
+  opacity: 0.9;
+  
+  
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+
+
+  <form action="/action_page.php" class="container">
+    <h4 class="text-center"><u> Student Panel</u></h4>
+
+    <label for="Redg"><b>Search your result</b></label>
+    <input type="number" placeholder="Enter your roll no" name="Redg" required>
+
+    <button type="submit" class="btn">Search</button>
+  </form>
+  </div>
+  </div>
+  </div>
+  
+<div class="col-6">
+     <div class="card">
+            <div class="card-body">
+         <style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: pink;
+}
+
+input[type=email]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: indigo;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+  <form action="/action_page.php" class="container">
+    <h4 class="text-center "><u> Admin Panel</u></h4>
+
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <a href="~/Admin/Dashboard" button type="submit" class="btn">Login</a>
+    <p class="text-center" ><b> Not Registered,then? 
+        <a href="~/Admin/Sign" class="link-success"> Sign in</a></b></p>
+
+  </form>
+</div>
+    </div>
+    </div>
+    </div>
+    
